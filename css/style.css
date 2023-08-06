@@ -25,6 +25,12 @@ body {
     margin: 10px;
 }
 
+.gridItem2 {
+    grid-column-start: 6;
+    grid-column-end:9;
+    margin: 10px;
+}
+
 h1 {
     display: inline;
 }
@@ -142,12 +148,25 @@ font-size: 30px;
     order: 8;
 }
 
+#topicBtn1, #topicBtn2, #topicBtn3, #topicBtn4, #topicBtn5, #topicBtn6, #topicBtn7, #topicBtn8, #topicBtn9 {
+    flex-basis: 20%;
+    order: 0;
+}       
+
+#subTopic10,#subTopic11,#subTopic12,#subTopic13,#subTopic14,#subTopic15,#subTopic16,#subTopic17,#subTopic18 {
+    flex-basis: 70%;
+    margin: 10px;
+    order: 1;
+}
+
 div.additional {
     flex-basis: 90;
     margin: 10px;
 }
 
 nav ul li{display:inline;}
+
+ul.buttonList li {display: inline;}
 
 li button {
     display: inline-block;
@@ -194,26 +213,64 @@ footer {
 
     /* For Phone */
     @media screen and (max-width:520px) {
-        .flex {
+        .flex, .grid {
             width: 360px;
         }
-
-        nav {
-            padding-bottom: 10px;
+        .grid {
+            justify-content: center;
         }
 
-        nav>h1 {
-            flex-basis: 100%;
+        .gridItem1 {
+            grid-column-start: 2;
+            grid-column-end:9;
+            margin: 10px;
+        }
+
+        .gridItem2 {
+            grid-column-start: 2;
+            grid-column-end:10;
+            margin: 10px;
+        }
+
+        #expandableBtn1, #expandableBtn2, #expandableBtn3, #expandableBtn5, #expandablebtn7, #expandableBtn9 {
+            flex-basis: 90%;
             text-align: center;
         }
 
-        nav>div {
-            flex-basis: 25%;
+        #expandableBtn6 {
+            flex-basis: 90%;
+            text-align: center;
+            order: 2;
         }
 
+        #expandableBtn8 {
+            flex-basis: 90%;
+            text-align: center;
+            order: 6;
+        }
+
+        #subTopic8 {
+            flex-basis: 90%;
+            order: 7;
+        }
+
+        #subTopic1, #subTopic5, #subTopic6, #subTopic7, #subTopic8 {
+            flex-basis: 90%;
+        }
+
+        #subTopic2 {
+            flex-basis: 90%;
+            order: 3;
+        }
+
+        .additional {flex-basis: 90%;
+            text-align: center;}
+            
         nav ul li{display:block;} /*make a menu items vertical*/
         #hamIcon{display: block;} /* unhide menu icon */
         nav ul{display:none;} /*hide the menu item list*/
+        
+        button {display: block;}
 
         img {
             max-width: 100%;
@@ -226,11 +283,80 @@ footer {
         .flex {
             width: 640px;
         }
+
+        .grid {
+            justify-content: center;
+        }
+
+        .gridItem1 {
+            grid-column-start: 1;
+            grid-column-end:10;
+            margin: 10px;
+        }
+
+        .gridItem2 {
+            grid-column-start: 1;
+            grid-column-end:10;
+            margin: 10px;
+        }
+
+        nav ul li{display:block;} /*make a menu items vertical*/
+        #hamIcon{display: block;} /* unhide menu icon */
+        nav ul{display:none;} /*hide the menu item list*/
+
+        button {display: block;}
+        
+        .additional {flex-basis: 90%;
+        text-align: center;}
+
+        #subTopic2 {
+            order: 3;
+        }
+
+        #expandableBtn1, #expandableBtn2, #expandableBtn3, #expandableBtn5, #expandablebtn7, #expandableBtn9 {
+            flex-basis: 70%;
+            text-align: center;
+        }
+
+        #expandableBtn6 {
+            flex-basis: 70%;
+            text-align: center;
+            order: 2;
+        }
+
+        #expandableBtn8 {
+            flex-basis: 70%;
+            text-align: center;
+            order: 6;
+        }
+
+        #subTopic8 {
+            flex-basis: 70%;
+            order: 7;
+        }
+
+        #subTopic10,#subTopic11,#subTopic12,#subTopic13,#subTopic14,#subTopic15,#subTopic16,#subTopic17,#subTopic18 {
+            flex-basis: 90%;
+            margin: 10px;
+            order: 1;
+        }
     }
 
     /* For Desktop */
     @media screen and (min-width:1080px) and (max-width: 1400px) {
         .flex {
             width: 1080px;
+        }
+
+        .gridItem1 {
+            grid-column-start: 3;
+            grid-column-end:4;
+            margin: 10px;
+        }
+
+        .gridItem2 {
+            grid-column-start: 6;
+            grid-column-end:10;
+            margin: 10px;
         }
     }

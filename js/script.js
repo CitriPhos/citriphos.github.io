@@ -102,9 +102,9 @@ hamBtn.addEventListener("click",toggleMenus);
 const menuItemsList=document.querySelector("nav ul");
 
 function toggleMenus(){ /*open and close menu*/
-menuItemsList.classList.toggle("menuShow");
-/*menuItemsList.classList.add("menuShow");
+/*menuItemsList.classList.toggle("menuShow");*/
+menuItemsList.classList.add("menuShow");
     if(menuItemsList.style.display=="block")
         menuItemsList.style.display="none";
-    else menuItemsList.style.display="block";*/
+    else menuItemsList.style.display="block";
 }//can optimize using toggle class with css transitions
