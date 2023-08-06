@@ -29,6 +29,11 @@ h1 {
     display: inline;
 }
 
+h1.mainTopic {
+text-align: center;
+flex-basis: 100%;
+font-size: 30px;
+}
 .gridItem2 {
     grid-column-start: 9;
     grid-column-end: 10;
@@ -60,6 +65,40 @@ h1 {
     order: 0;
 }
 
+#expandableBtn5 {
+    flex-basis: 20%;
+    order: 0;
+}
+
+#expandableBtn6 {
+    flex-basis: 20%;
+    order: 3;
+}
+
+#expandableBtn7 {
+    flex-basis: 20%;
+    order:4;
+}
+
+#expandableBtn8 {
+    flex-basis: 20%;
+    order:6;
+}
+
+#expandableBtn9 {
+    flex-basis: 20%;
+    order:8;
+}
+
+.subTopic {
+    text-align: center;
+    background-color: #d3afed;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    flex-basis: 70%;
+}
+
 #subTopic1 {
     flex-basis: 50%;
 }
@@ -74,7 +113,38 @@ h1 {
 }
 
 #subTopic4 {
-    flex-basis: 100%;
+    flex-basis: 70%;
+    margin-bottom: 10px;
+}
+
+#subTopic5 {
+    flex-basis: 70%;
+    order: 1;
+}
+
+#subTopic6 {
+    flex-basis: 70%;
+    order: 2;
+}
+
+#subTopic7 {
+    flex-basis: 70%;
+    order: 4;
+}
+
+#subTopic8 {
+    flex-basis: 70%;
+    order: 5;
+}
+
+#subTopic9 {
+    flex-basis: 70%;
+    order: 8;
+}
+
+div.additional {
+    flex-basis: 90;
+    margin: 10px;
 }
 
 nav ul li{display:inline;}
@@ -90,7 +160,7 @@ section img {
     width: 250px;
 }
 
-a.button:link, a.button:visited {
+.pageBtn {
     color: white;
     background-color: #934ad7;
     display: inline-block;
@@ -100,11 +170,6 @@ a.button:link, a.button:visited {
     text-decoration: none;
     text-align: center;
     font: 14px Arial, sans-serif;
-}
-
-a.button:hover, a.button:active {
-background-color: #d2bbe9;
-border-color: #4352b6;
 }
 
 header {
@@ -121,9 +186,51 @@ footer {
 
 /*CSS for responsive menu*/
 #hamIcon{display:none;}
-@media screen and (max-width:800px){
-    nav ul li{display:block;} /*make a menu items vertical*/
-    #hamIcon{display: block;} /* unhide menu icon */
-    nav ul{display:none;} /*hide the menu item list*/
-}
+/*@media screen and (max-width:800px){
+    /*nav ul li{display:block;}*/ /*make a menu items vertical*/
+    /*#hamIcon{display: block;}*/ /* unhide menu icon */
+    /*nav ul{display:none;}*/ /*hide the menu item list*/
+/*}*/
 
+    /* For Phone */
+    @media screen and (max-width:520px) {
+        .flex {
+            width: 360px;
+        }
+
+        nav {
+            padding-bottom: 10px;
+        }
+
+        nav>h1 {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        nav>div {
+            flex-basis: 25%;
+        }
+
+        nav ul li{display:block;} /*make a menu items vertical*/
+        #hamIcon{display: block;} /* unhide menu icon */
+        nav ul{display:none;} /*hide the menu item list*/
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    /* For tablet */
+    @media screen and (min-width:520px) and (max-width:1080px) {
+        .flex {
+            width: 640px;
+        }
+    }
+
+    /* For Desktop */
+    @media screen and (min-width:1080px) and (max-width: 1400px) {
+        .flex {
+            width: 1080px;
+        }
+    }

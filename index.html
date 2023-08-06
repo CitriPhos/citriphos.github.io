@@ -10,67 +10,358 @@
 </head>
 <body class="flex">
 <header class="grid">
-    <div class="gridItem1">
+    <div id="page0btn" class="gridItem1">
     <img src="images/head_phone.png" alt="Website Icon" height="90px">
     <h1>All About EDM</h1>
     </div>
     <nav class="gridItem2"> <!--menu system-->
         <button id="hamIcon">Menu</button>
-        <!-- <ul id = "menuList">
-            <li><button id="page1btn">History of EDM</button></li>
-            <li><button id="page2btn">Genres</button></li>
-            <li><button id="page3btn">Notable Artists</button></li>
-        </ul> -->
         <ul id = "menuList">
-            <li><a href="topic1.html">History of EDM</a></li>
-            <li><a href="topic2.html">Genres</a></li>
-            <li><a href="topic3.html">Notable Artists</a></li>
-        </ul> 
+            <li><button id="page1btn" class="pageBtn">History of EDM</button></li>
+            <li><button id="page2btn" class="pageBtn">Genres</button></li>
+            <li><button id="page3btn" class="pageBtn">Notable Artists</button></li>
+        </ul>
+        <!-- <ul id = "menuList">
+            <li><a class="button" href="topic1.html">History of EDM</a></li>
+            <li><a class="button" href="topic2.html">Genres</a></li>
+            <li><a class="button" href="topic3.html">Notable Artists</a></li>
+        </ul> -->
     </nav>
 </header>
 
+<div id="pagecontainer">
 
-<section class="flex">
-    <div id="expandableBtn1" class="col">
-    <h2>What is EDM?</h2>
-    <img src="images/WhatIsEDM.jpg"></img>
+    <div class="page" id="page0" style="display: none;">
+
+    <section class="flex">
+        <div id="expandableBtn1" class="col">
+        <h2>What is EDM?</h2>
+        <img src="images/WhatIsEDM.jpg"></img>
+        </div>
+        <div id ="subTopic1" class="subTopic" style="display: none;">EDM, also known as Electronic Dance Music, refers to an umbrella term for a panoply of musical styles that emerged in the mid-1980s. It consists of various styles ranging from beatless ambient music to hardcore, with house, techno, drum and bass, dubstep and trance.
+        This site aims to educate people about what EDM is, the history and influences surrounding it and artists you should know in the EDM scene.</div>
+    </section>
+
+
+    <section class="flex">
+        <div id="expandableBtn2" class="col">
+        <h2>How did EDM start?</h2>
+        <img src="images/HistoryOfEDM.png"></img>
+        </div>
+        <div id ="subTopic2" class="subTopic" style="display: none;">
+            <p>The origins of EDM dates back from the disco genre, which was heavily popular in the late 70s. Since then, Since the 80s with the introduction of synthpop during the "post-disco" era, EDM has since evolved from the music genre we know today.</p>
+        <!-- <div><button id="page1btn" class="pageBtn">Learn more about the history of EDM</button></div> -->
+        </div>
+    </section>
+
+
+    <section class="flex">
+        <div id="expandableBtn3" class="col">
+        <h2>What are the subgenres?</h2>
+        <img src="images/Subgenres.png"><img>
+        </div>
+        <div id = "subTopic3" class="subTopic" style="display: none;">
+            <p>EDM has created multiple subgenres such as Trance, Electro, House, Dub, Techno, Drum and Bass, etc.</p>
+        <!-- <div><button id="page2btn" class="pageBtn">Learn more about the different subgenres here</button></div> -->
+        </div>
+    </section>
+
+
+    <section class="flex">
+        <div id="expandableBtn4" class="col">
+        <h2>Notable Artists</h2>
+        <img src="images/entertainment_music.png" alt="Notable Artists">
+        </div>  
+        <div id = "subTopic4" class="subTopic" style="display: none;">
+            <p>EDM has created many multiple artists in the music industry such as Avicii, David Guetta, Marshmello, Calvin Harris, Skrillex and deadmau5.</p>
+        <!-- <div><button id="page3btn" class="pageBtn">Learn more about notable artists here</button></div> -->
+        </div>
+    </section>
     </div>
-    <div id ="subTopic1" style="display: none;">EDM, also known as Electronic Dance Music, refers to an umbrella term for a panoply of musical styles that emerged in the mid-1980s. It consists of various styles ranging from beatless ambient music to hardcore, with house, techno, drum and bass, dubstep and trance.
-    This site aims to educate people about what EDM is, the history and influences surrounding it and artists you should know in the EDM scene.</div>
-</section>
 
-
-<section class="flex">
-    <div id="expandableBtn2" class="col">
-    <h2>How did EDM start?</h2>
-    <img src="images/HistoryOfEDM.png"></img>
+    <div class="page" id="page1" style="display: none;">
+        <section class="flex">
+            <h1 class="mainTopic">History of EDM</h1>
+            
+            <button id="topicBtn6">1970s</button>
+            <div id="subTopic15" class="subTopic">
+            <ul>
+                <li>The beginning of EDM came from the disco and hip-hop genre</li>
+                <li>Disco aimed to move crowds of people on the dancefloor, using drum machines and electronic instruments to create synthesized rhythms</li>
+                <li><ul>Notable songs include:
+                    <li>I Feel Love - Donna Summer</li>
+                    <li>Rock Your Baby - George McCrae</li>
+                </ul></li>
+            </ul>
+    
+            <ul>
+                <li>Hip Hop has contributed to the heavy influence on EDM; it rose up from an economic crisis in New York</li>
+                <li>DJs would be accompanied by MCs to inject enthusiasm into the crowd by rhyming and supplying the vocal to the music</li>
+                <li>In 1979 - The Sugarhill Gang released 'Rapper's Delight' using Chic's popular discor track 'Good Times' - introducing hip hop music to a much wider audience</li>
+            </ul>
+            </div>
+            
+            <button id="topicBtn7">1980s</button>
+                <div id="subTopic16" class="subTopic">
+                <ul>
+                <li>Synthpop was developed alongside house music & electro music during the "post-disco" era in the "80s</li>
+                <li>Music were produced in the mainstream music industry in Europe as EDM becaome more technological advancements</li>
+                <li>MIDI revolutionized the way electronic instruments could communitcate</li>
+                <li><ul>Notable songs:
+                    <li>Take On Me - a-ha</li>
+                    <li>On and On - Jesse Saunders</li></ul>
+                </li>
+                </ul>
+    
+                <ul>
+                    <li>Electro - greatly inspired by hip hop and German synthpop - electro replaced more traditional instruments such as the bass guitar and the drums with synthesizers & drum machines</li>
+                    <li>Afrika Bambaataa's 'Planet Rock' - became synonymous w/ hip hop & electronic music culture and Bambaataa would continue to produce numerous genre-defining electro tracks</li>
+                </ul>
+                </div>
+    
+            <button id="topicBtn8">1990s</button>
+            <div id="subTopic17" class="subTopic">
+            <ul>
+            <li>new subgenres introduced in this period were techno, house, hardcore, dub, trance and drum and bass</li>
+            <li>the rave scene in the UK and Germany shaped the emergence of Trance music, which originated in Germany</li>
+            <li><ul>Notable songs:
+                <li>Orbital - Chime</li>
+                <li>Orbital - Halcyon On and On</li>
+            </ul></li>
+            </ul>
+    
+            <ul>
+                <li>Detroit techno -> pioneered by the "Belleville Three" including Derrick Mayr</li>
+                <li>May's song "Strings of Life" -> track that defined the techno genre</li>
+            </ul>
+            </div>
+            <button id="topicBtn9">2000s - present</button>
+            <div id="subTopic18" class="subTopic">
+            <ul>
+                <li>EDM picked up popularity in the US thanks to international DJs & music producers</li>
+                <li>Tiesto, Daft Punk & David Guetta -> have made names for themselves within the mainstream music industry</li>
+                <li>Dubstep was also introduced to the US through artists like Skrillex -> Grammy-winning EDM artist with sounds of dubstep, house, trap and more</li>
+                <li>EDM is often characterized by remixes and original sound mixes produced by world-famous DJs -> it is also used by a majority of pop and hip-hop artists</li>
+            </ul>
+        </div>
+        </section>
     </div>
-    <div id ="subTopic2" style="display: none;">The origins of EDM dates back from the disco genre, which was heavily popular in the late 70s. Since then, Since the 80s with the introduction of synthpop during the "post-disco" era, EDM has since evolved from the music genre we know today.
-    <div><a class="button" href="topic1.html">Learn more about the history of EDM</a></div>
+    
+    <div class="page" id="page2" style="display: none;">
+        <section class="flex">
+            <h1 class="mainTopic">Genres</h1>
+    
+            <button id="topicBtn1">House</button>
+            <div id="subTopic10" class="subTopic">
+            <ul>
+                <li>Began in Chicago -> one of the most prominent & popular genres</li>
+                <li>Features a repetitive disco rhythm with percussion made through a drum machin & various percussive instruments for a Latin/soul feel</li></ul>
+                
+                <ul>Subgenres of House include:
+                    <li>Deep House</li>
+                    <li>Progressive House</li>
+                    <li>Electro House</li>
+                </ul>
+                
+                <ul>Notable artists who contributed to making music in this genre include:
+                    <li>David Guetta</li>
+                    <li>deadmau5</li>
+                    <li>Avicii</li>
+                    <li>Daft Punk</li>
+                    <li>Zedd</li>
+                </ul>
+            </ul>
+            </div> 
+            
+            <button id="topicBtn2">Techno</button>
+            <div id="subTopic11" class="subTopic">
+            <ul>
+                <li>founded by the Belleville Three - Juan Atkins, Derrick May and Kevin Saunderson</li>
+                <li>Emphasis on atmosphere and an often extended buildup - driven by a repetitive, common beat under synthesizers and other electronic gear</li>
+                <li>early media coverage of EDM in the 80s and 90s used "techno" as a catch-all term</li>
+    
+                    <ul>Notable Artists who contributed to making music in this genre include:
+                        <li>Juan Atkins</li>
+                        <li>Derrick May</li>
+                        <li>Kevin Saunderson</li>
+                        <li>Carl Cox</li>
+                    </ul>
+    
+            </ul>
+            </div>
+    
+            <button id="topicBtn3">Trance</button>
+            <div id="subTopic12" class="subTopic">
+            <ul>   
+                <li>born in Germany - known for building up and breaking down huge melodies</li>
+                <li>started as a subgenre of house - shares traits with techno, new age and synth pop</li>
+                <li>first few tracks emerged in the late 80s -> early 90s is when the genre became more popular</li>
+                
+                <ul>Subgenres of Trance include:
+                    <li>Progressive Trance</li>
+                    <li>Tech Trance</li>
+                    <li>Psytrance</li>
+                </ul>
+    
+                <ul>Notable Artists who contributed to making music in this genre include:
+                    <li>Armin Van Buuren</li>
+                    <li>Tiēsto</li>
+                    <li>Ferry Corsten</li>
+                </ul>
+            </ul>
+            </div>
+    
+            <button id="topicBtn4">Dubstep</button>
+            <div id="subTopic13" class="subTopic">
+            <ul>
+                <li>started as a more experimental take on 2-step that was running through London in the late 90s</li>
+                <li>early sound og dubstep are over a decade old - far from the aggressive tracks that are associated with the genre today</li>
+                <li>grew in 2005 with DJs like John Peel and Mary Anne Hobbs bringing it to the UK radio</li>
+                
+                <ul>Subgenres of Dubstep include:
+                    <li>Brostep</li>
+                    <li>Luvstep</li>
+                    <li>Thugstep</li>
+                </ul>
+    
+                <ul>Notable Artists who contributed to making music in this genre include:
+                    <li>Skrillex</li>
+                    <li>Nero</li>
+                    <li>Bassnectar</li>
+                    <li>Excision</li>
+                </ul>
+            </ul>
+            </div>
+    
+            <button id="topicBtn5">Drum and Bass</button>
+            <div id="subTopic14" class="subTopic">
+            <ul>
+                <li>While its roots were in the hardcore rave scene of London in the early 90s - mutated into a darker sound all to its own</li>
+                <li>includes reggae/dancehall sub bass with sped up breakbeats at 160-180 bpm</li>
+                <li>Has encompassed a no. of sounds with subgenres incorporating jazz, soul, hip-hop and trance</li>
+                
+                <ul>Subgenres of DnB include:
+                    <li>Drumstep</li>
+                    <li>Liquid Funk</li>
+                    <li>Techstep</li>
+                    <li>Neurofunk</li>
+                    <li>Jump-Up</li>
+                </ul>
+    
+                <ul>Notable Artists who contributed to making music in this genre include:
+                    <li>Pendulum</li>
+                    <li>Noisia</li>
+                    <li>Chase & Status</li>
+                    <li>Feint</li>
+                </ul>
+            </ul>
+            </div>
+            
+            <div>...and many more!</div>
+        </section>
     </div>
-</section>
-
-
-<section class="flex">
-    <div id="expandableBtn3" class="col">
-    <h2>What are the subgenres?</h2>
-    <img src="images/Subgenres.png"><img>
+    
+    <div class="page" id="page3" style="display: none;">
+        <section class="flex">
+            <h1 class="mainTopic">Notable Artists</h1>
+            
+            <div id="expandableBtn5">
+                <h2>Daft Punk</h2>
+                <img src="images/daftpunk.jpg" alt="Daft Punk"></img>
+            </div>
+    
+            <div id="subTopic5" class="subTopic" style="display: none;">
+                <ul>
+                    <li>a French duo formed in 1993 by Thomas Bangalter and Guy-Manuel de Homem-Christo</li>
+                    <li>were part of the French house movement - popular in the late 90s, combining elements of house with funk, techno, disco, rock and synthpop influences</li>
+                    <li>Disbanded in Feburary 2021 - although they are considered to be the most influencial artists in EDM</li>
+            
+                    <li><ul>Notable songs:
+                        <li>Get Lucky ft. Pharrell Williams and Nile Rodgers (Random Access Memories, 2013)</li>
+                        <li>Harder, Better, Faster, Stronger (Discovery, 2001)</li>
+                        <li>One More Time (Discovery, 2001)</li>
+                        <li>Around the World (Homework, 1997)</li>
+                        <li>Da Funk (Homework, 1997)</li>
+                    </ul></li>
+                </ul>
+            </div>
+    
+            <div id="expandableBtn6">
+                <h2>Skrillex</h2>
+                <img src="images/skrillex.jpg" alt="Skrillex"></img>
+            </div>
+    
+            <div id="subTopic6" class="subTopic"  style="display: none;">
+                <ul>
+                    <li>an American DJ and music producer - was a lead singer of From First To Last in 2004 before leaving in 2007</li>
+                    <li><ul>Notable songs:
+                            <li>First of the Year (Equinox) (Scary Monsters and Nice Sprites, 2010)</li>
+                            <li>Scary Monsters and Nice Sprites (Scary Monsters and Nice Sprites, 2010)</li>
+                            <li>Bangarang ft. Sirah (Bangarang EP, 2011)</li>
+                            <li>Kyoto ft. Sirah (Bangarang EP, 2011)</li>
+                            <li>Kill Everybody (Scary Monsters and Nice Sprites, 2010)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="expandableBtn7">
+                <h2>Alan Walker</h2>
+                <img src="images/alanwalker.png" alt="Alan Walker"></img>
+            </div>
+            
+            <div id="subTopic7" class="subTopic" style="display: none;">
+                <ul>
+                    <li>a Norwegian music producer and DJ - known for his track "Faded" which rose in popularity in 2015</li>
+                    <li><ul>Notable songs:
+                            <li>Faded (2015)</li>
+                            <li>Sing Me To Sleep (2016)</li>
+                            <li>Alone (2016)</li>
+                            <li>Tired ft. Gavin James (2017)</li>
+                            <li>Darkside (2017)</li>
+                        </ul>
+                    </li>
+            </ul>
+            </div>
+            
+            <div id="expandableBtn8">
+                <h2>Avicii</h2>
+                <img src="images/avicii.jpg" alt="Avicii"></img>
+            </div>
+    
+            <div id="subTopic8" class="subTopic" style="display: none;">
+            <ul>
+                <li>a Swedish DJ who rose to fame with his single "Levels"</li>
+                <li><ul>Notable songs:
+                    <li>Levels (2011)</li>
+                    <li>Wake Me Up (2013)</li>
+                    <li>The Nights (2014)</li>
+                    </ul></li>
+            </ul>
+            </div>
+            
+            <div id="expandableBtn9">
+                <h2>Porter Robinson</h2>
+                <img src="images/porterrobinson.jpg" alt="Porter Robinson"></img>
+            </div>
+            <div id="subTopic9" class="subTopic" style="display: none;">
+                <ul>
+                        <li>started music at the age of 12 - introduced a more experimental sound to the EDM scene</li>
+                        <li>his debut album Worlds peaked #1 on their Dance/Electronic albums list</li>
+                        <li><ul>Notable songs:
+                            <li>Goodbye to a World (Worlds, 2014)</li>
+                            <li>Shelter (with Madeon, 2016)</li>
+                            <li>Look at the Sky (Nurture, 2021)</li>
+                            <li>Everything Goes On (2022)</li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+    
+            <div class="additional" style="order: 9;">While these are the artists the site mentions, there are many more yet to be discovered!</div>
+        </section>
     </div>
-    <div id = "subTopic3" style="display: none;">EDM has created multiple subgenres such as Trance, Electro, House, Dub, Techno, Drum and Bass, etc.
-    <div><a class="button" href="topic2.html">Learn more about the different subgenres here</a></div>
-    </div>
-</section>
-
-
-<section class="flex">
-    <div id="expandableBtn4" class="col">
-    <h2>Notable Artists</h2>
-    <img src="images/entertainment_music.png" alt="Notable Artists">
-    </div>  
-    <div id = "subTopic4" style="display: none;">EDM has created many multiple artists in the music industry such as Avicii, David Guetta, Marshmello, Calvin Harris, Skrillex and deadmau5.
-    <div><a class="button" href="topic3.html">Learn more about notable artists here</a></div>
-    </div>
-</section>
+</div>
 
 <footer class="flex"><ul>Sources:
     <li><a href="https://www.britannica.com/art/electronic-dance-music">Britannica - electronic-dance-music</a></li>
